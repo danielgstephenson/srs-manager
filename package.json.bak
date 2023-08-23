@@ -1,0 +1,38 @@
+{
+  "name": "srs-manager",
+  "version": "1.0.0",
+  "description": "student response system manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build" : {
+    "appId" : "manager",
+    "productName" : "manager",
+    "extraFiles" : [
+      "config.json",
+      "circle.ico"
+    ],
+    "win" : {
+      "target" : "dir",
+      "icon" : "circle.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielgstephenson/srs-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielgstephenson/srs-manager/issues"
+  },
+  "homepage": "https://github.com/danielgstephenson/srs-manager#readme",
+  "devDependencies": {
+    "electron": "^20.0.3",
+    "electron-builder": "^23.3.3",
+    "standard": "^17.0.0"
+  }
+}
